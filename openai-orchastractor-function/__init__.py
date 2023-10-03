@@ -10,14 +10,21 @@ import re
 # Global configurations
 openai.api_type = "azure"
 openai.api_version = "2023-08-01-preview"
-openai.api_base = "https://openai-nwicb-innovation.openai.azure.com/"
+
+## CHANGE ME
+openai.api_base = "https://openai-resource.openai.azure.com/"
+
 openai.api_key = os.environ.get('OPENAI_API_KEY')
 deployment_id = "gpt-35-turbo-test"
 
 # Azure Cognitive Search configurations
-search_endpoint = "https://cogsearch-nwicb-innovation.search.windows.net"
+
+## CHANGE ME
+search_endpoint = "https://cogsearch-resource.search.windows.net"
 search_key = os.environ.get('SEARCH_API_KEY')
-search_index_name = "cogsearch-nwicb-innovation-index"
+
+#CHANGE ME
+search_index_name = "cogsearch-resource-index"
 
 # Environment variable configurations
 AZURE_SEARCH_CONTENT_COLUMNS = os.environ.get("AZURE_SEARCH_CONTENT_COLUMNS")
